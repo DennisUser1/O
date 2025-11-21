@@ -1,0 +1,13 @@
+.accent {
+    color: var(--color-brand);
+}
+.accent-dark {
+    color: var(--color-primary-dark);
+    text-transform: capitalize;
+    font-weight: 600;
+}
+
+.accent-title {
+    text-transform: capitalize;
+    color: var(--color-brand);
+}
