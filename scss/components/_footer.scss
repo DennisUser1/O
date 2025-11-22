@@ -1,0 +1,61 @@
+.footer {
+  position: relative;
+  padding: 56px 0;
+  background-color: var(--color-primary-dark);
+  background-image: url(../image/background-footer.png);
+  &::after {
+    position: absolute;
+    content: '';
+    bottom: 0;
+    right: 0;
+    width: 248px;
+    height: 150px;
+    background-image: url(image/products.png);
+    background-repeat: no-repeat;
+  }
+  &__footer-container {
+    display: flex;
+    &__footer-nav {
+      display: flex;
+      flex-basis: 50%;
+      gap: 186px;
+      &__footer-menu {
+        display: flex;
+        flex-direction: column;
+        gap: 16px;
+        padding: 0;
+        margin: 0;
+      }
+    }
+    &__footer-address {
+      display: flex;
+      flex-basis: 50%;
+      gap: 186px;
+      &__address-list {
+        display: flex;
+        flex-direction: column;
+        gap: 16px;
+        flex-grow: 1;
+        padding: 0;
+        margin: 0;
+        &__adress-icon-footer {
+          fill: var(--color-primary-light);
+          height: 32px;
+          width: 32px;
+        }
+        &__footer-icons {
+          display: flex;
+          align-items: center;
+          gap: 24px;
+        }
+      }
+      &__address-info {
+        width: 300px;
+        flex-grow: 1;
+        display: flex;
+        flex-direction: column;
+        gap: 16px;
+      }
+    }
+  }
+}

@@ -1,0 +1,71 @@
+.section2 {
+  &__before-after-container {
+    display: flex;
+    gap: 32px;
+  }
+  &__before-after-container {
+    position: relative;
+  }
+  &__first-title {
+    font-family: 'Play', sans-serif;
+    margin-bottom: 40px;
+    font-size: 64px;
+  }
+}
+
+.photo-block {
+  display: flex;
+  flex-direction: column;
+
+  &__photo-circle {
+    width: 328px;
+    height: 328px;
+    border-radius: 50%;
+    overflow: hidden;
+    flex: 0 0 328px;
+  }
+  &__after-photo {
+    margin-top: 40px;
+    margin-left: 172px;
+  }
+}
+
+.stars-block {
+  position: absolute;
+  inset: 0;
+  pointer-events: none;
+  z-index: 2;
+
+  &__star1 {
+    width: 64px;
+    top: 120px;
+    left: 0;
+    background-color: var(--color-brand);
+  }
+
+  &__star2 {
+    width: 40px;
+    top: 0;
+    right: 140px;
+    background-color: var(--color-brand);
+  }
+
+  &__star3 {
+    width: 24px;
+    bottom: 32px;
+    left: 120px;
+    background-color : var(--color-brand)
+  }
+}
+
+
+@keyframes rotateStar {
+  from {
+    transform: rotate(0deg);
+  }
+
+  to {
+    transform: rotate(45deg);
+  }
+}
+
