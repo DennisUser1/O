@@ -1,0 +1,180 @@
+.footer {
+  position: relative;
+  padding: 56px 0;
+  background-color: var(--color-primary-dark);
+  background-image: url(../image/background-footer.png);
+  background-size: cover;
+  background-position: center;
+
+  &::after {
+    position: absolute;
+    content: '';
+    bottom: 0;
+    right: 0;
+    width: 248px;
+    height: 150px;
+    background-image: url(../image/products.png);
+    background-repeat: no-repeat;
+
+    @media screen and (max-width: $bp-tablet) {
+      display: none;
+    }
+  }
+
+  &__footer-container {
+    display: flex;
+    flex-direction: column;
+    gap: 40px;
+    align-items: center;
+
+    @media screen and (min-width: $bp-desktop) {
+      flex-direction: row;
+      align-items: flex-start;
+      justify-content: space-between;
+    }
+
+    
+    &__footer-nav {
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      gap: 40px;
+
+      @media screen and (min-width: $bp-desktop) {
+        flex-direction: row;
+        flex-basis: 50%;
+        gap: 186px;
+        align-items: flex-start;
+      }
+
+      &__footer-menu {
+        display: flex;
+        flex-direction: column;
+        gap: 16px;
+        padding: 0;
+        margin: 0;
+        list-style: none;
+        align-items: center;
+
+        @media screen and (min-width: $bp-desktop) {
+          align-items: flex-start;
+        }
+      }
+    }
+
+ 
+    &__footer-address {
+      display: flex;
+      flex-direction: column;
+      gap: 40px;
+      font-style: normal;
+      align-items: center;
+
+      @media screen and (min-width: $bp-desktop) {
+        flex-direction: row;
+        flex-basis: 50%;
+        gap: 186px;
+        align-items: flex-start;
+      }
+
+ 
+      &__contact-block {
+        display: flex;
+        flex-direction: column;
+        gap: 16px;
+        align-items: center;
+
+        @media screen and (min-width: $bp-desktop) {
+          align-items: flex-start;
+        }
+      }
+
+
+      &__address-list {
+        display: none;
+        flex-direction: column;
+        gap: 16px;
+        padding: 0;
+        margin: 0;
+        list-style: none;
+        align-items: center;
+
+        @media screen and (min-width: $bp-desktop) {
+          display: flex;
+          align-items: flex-start;
+        }
+      }
+
+      // Іконки в рядок
+      &__footer-icons {
+        display: flex;
+        flex-direction: row;
+        align-items: center;
+        gap: 24px;
+        padding: 0;
+        margin: 0;
+        list-style: none;
+        justify-content: center;
+
+        @media screen and (min-width: $bp-desktop) {
+          justify-content: flex-start;
+        }
+      }
+
+      // Стилі іконок
+      &__adress-icon-footer {
+        fill: var(--color-primary-light);
+        height: 32px;
+        width: 32px;
+        transition: fill 0.3s;
+
+        &:hover {
+          fill: var(--color-brand);
+        }
+      }
+
+      // Блок політики конфіденційності
+      &__address-info {
+        width: 100%;
+        max-width: 300px;
+        display: flex;
+        flex-direction: column;
+        gap: 16px;
+        align-items: center;
+
+        @media screen and (min-width: $bp-desktop) {
+          width: 300px;
+          align-items: flex-start;
+        }
+      }
+    }
+  }
+}
+
+.footer-logo {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+
+  img {
+    width: 100%;
+    max-width: 150px;
+  }
+}
+
+.link-footer {
+  color: var(--color-primary-light);
+  text-decoration: none;
+  transition: color 0.3s;
+
+  &:hover {
+    color: var(--color-brand);
+  }
+}
+
+.protected-data {
+  font-weight: 400;
+  font-size: 13px;
+  color: var(--color-secondary-gray);
+  margin: 0;
+}

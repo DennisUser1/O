@@ -1,0 +1,124 @@
+.form-field {
+  margin-bottom: 24px;
+
+  &__label {
+    display: block;
+
+    &__input {
+      padding-left: 32px;
+      padding-right: 32px;
+      padding-top: 18px;
+      padding-bottom: 18px;
+      font-size: 13px;
+      line-height: 1.1;
+      width: 100%;
+      border: 2px solid var(--color-secondary-gray);
+      border-radius: 32px;
+      background-color: transparent;
+    }
+
+    &__input:focus {
+      border-color: var(--color-secondary-gray);
+      background-color: var(--color-secondary-gray);
+      outline: none;
+    }
+
+    &__input::placeholder {
+      color: var(--color-primary-light);
+    }
+  }
+}
+
+.form-policy {
+  margin: 0 auto;
+  max-width: 220px;
+  font-size: 12px;
+  line-height: 1.1;
+  text-align: center;
+  color: var(--color-secondary-gray);
+}
+
+.contact-form {
+    background-color: var(--color-primary-dark);
+    width: 100%;
+    border-radius: 32px;
+    padding: 32px 20px; 
+    box-sizing: border-box;
+    margin: 0 auto;
+
+    @media screen and (min-width: $bp-tablet) {
+        width: 424px;
+        max-width: none;
+        padding: 56px 48px;
+    }
+
+    &__contact-field {
+        margin-bottom: 16px;
+
+
+        &__label {
+            display: block;
+
+            &__input {
+                padding: 16px 24px; 
+                font-size: 13px;
+                line-height: 1.1;
+                width: 100%;
+                border: 2px solid var(--color-secondary-gray);
+                border-radius: 32px;
+                background-color: transparent; 
+                box-sizing: border-box;
+
+                @media screen and (min-width: $bp-tablet) {
+                    padding: 18px 32px;
+                }
+
+                &:focus {
+                    border-color: var(--color-secondary-gray); 
+                    background-color: var(--color-secondary-gray); 
+                    outline: none;
+                }
+
+                &::placeholder {
+                    color: var(--color-primary-light); 
+                    font-size: 13px;
+
+                    @media screen and (min-width: $bp-tablet) {
+                        font-size: 13px;
+                    }
+                }
+            }
+        }
+    }
+}
+
+
+
+
+.main-text-bold {
+    font-weight: 600;
+    font-size: 22px; 
+    color: var(--color-primary-light);
+    text-align: center;
+    line-height: 1.4;
+    margin-bottom: 24px; 
+
+   
+}
+
+.privacy-policy-text {
+    color: var(--color-secondary-gray);
+    font-size: 11px; 
+    line-height: 1.5;
+    max-width: 100%; 
+    margin: 0 auto;
+    display: block;
+    text-align: center;
+    padding: 0 10px; 
+
+    @media screen and (min-width: $bp-tablet) {
+        font-size: 12px;
+        max-width: 220px;
+        padding: 0;
+    }
+}

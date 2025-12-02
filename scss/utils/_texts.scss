@@ -1,0 +1,49 @@
+.main-text {
+  font-size: 22px;
+  line-height: 1.7;
+}
+.main-text1 {
+  margin-bottom: 40px;
+  max-width: 709px;
+}
+
+.text-bef-aft {
+  max-width: 710px;
+}
+
+.services-text {
+  line-height: 1.1;
+  color: var(--color-primary-light);
+  width: 152px;
+  position: absolute;
+  left: 50%;
+  bottom: 32px;
+  transform: translateX(-50%);
+  text-align: center;
+  z-index: 1;
+}
+.main-text-bold {
+  font-weight: 600;
+  font-size: 22px;
+  color: var(--color-primary-light);
+  text-align: center;
+}
+.privacy-policy-text {
+  color: var(--color-secondary-gray);
+  font-size: 12px;
+  line-height: 1.5;
+  max-width: 220px;
+  margin: 0 auto;
+  display: block;
+  text-align: center;
+}
+
+.privacy-link {
+  color: var(--color-secondary-gray);
+}
+.modal-text {
+  max-width: 270px;
+  margin: 0 auto;
+  margin-bottom: 32px;
+  font-size: 22px;
+}

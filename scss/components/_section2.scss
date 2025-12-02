@@ -1,0 +1,101 @@
+.section2 {
+  &__before-after-container {
+    display: flex;
+    gap: 32px;
+  }
+  &__before-after-container {
+    position: relative;
+  }
+  &__first-title {
+    font-family: 'Play', sans-serif;
+    margin-bottom: 24px;
+    font-size: 32px;
+
+    @media screen and (min-width: $bp-tablet) {
+        font-size: 64px;
+        margin-bottom: 40px;
+      }
+  }
+}
+
+.photo-block {
+  display: none;
+
+  &__photo-circle {
+    width: 328px;
+    height: 328px;
+    border-radius: 50%;
+    overflow: hidden;
+    flex: 0 0 328px;
+  }
+  &__after-photo {
+    margin-top: 40px;
+    margin-left: 172px;
+  }
+
+     @media screen and (min-width: $bp-tablet) {
+    display: flex;
+      flex-direction: column;
+     }
+}
+
+.stars-block {
+  position: absolute;
+  inset: 0;
+  pointer-events: none;
+  z-index: 2;
+
+  &__star1 {
+    display: none;
+    position: absolute;
+    width: 64px;
+  top: 50px; 
+    right: 0;
+    fill: var(--color-brand);
+
+    @media screen and (min-width: $bp-tablet) {
+        display: flex;
+      }
+  }
+
+  &__star2 {
+    position: absolute;
+    width: 40px;
+    bottom: 0;
+    right: 0;
+    fill: var(--color-primary-dark);
+
+    @media screen and (min-width: $bp-tablet) {
+        display: flex;
+        position: absolute;
+          width: 64px;
+          bottom: 280px;
+          right: 300px;
+      }
+  }
+
+  &__star3 {
+    display: none;
+    position: absolute;
+    width: 24px;
+    top: 350px;
+    right: 0;
+    fill: var(--color-secondary-gray);
+
+    @media screen and (min-width: $bp-tablet) {
+      display: flex;
+    }
+  }
+}
+
+
+@keyframes rotateStar {
+  from {
+    transform: rotate(0deg);
+  }
+
+  to {
+    transform: rotate(45deg);
+  }
+}
+

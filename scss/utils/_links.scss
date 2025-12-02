@@ -1,0 +1,16 @@
+.link-footer {
+    color: var(--color-primary-light);
+    text-decoration: none;
+    transition: color 0.3s;
+
+    &:hover {
+        color: var(--color-brand);
+    }
+}
+
+.protected-data {
+    font-weight: 400;
+    font-size: 13px;
+    color: var(--color-secondary-gray);
+    margin: 0;
+}
